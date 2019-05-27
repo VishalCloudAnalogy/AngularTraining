@@ -25,7 +25,7 @@ export class MyServiceService {
 
   // For new blog 
 
-  newBlogData(blog: any) {
+  public newBlogData(blog: any) {
     this.holdBlogValue = blog;
     console.log("in the service file ",this.holdBlogValue);
   }

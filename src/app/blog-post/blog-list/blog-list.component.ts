@@ -17,7 +17,6 @@ export class BlogListComponent implements OnInit {
     this.newBlogHolder = this.myService.holdNewBlog();
     this.bTitle = this.newBlogHolder.blogTitle;
     this.blogDesc = this.newBlogHolder.blogDesc;
-
     console.log(this.bTitle);
     console.log(this.blogDesc);
   }

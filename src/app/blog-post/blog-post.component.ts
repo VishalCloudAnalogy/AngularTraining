@@ -9,8 +9,7 @@ import { MyServiceService } from '../my-service.service';
 })
 export class BlogPostComponent implements OnInit {
   formDataHolder: any;
-  userName: any; 
-  pass: any; 
+  userName: any;
 
   postBlog = new FormGroup({   
     blogTitle: new FormControl(''),
