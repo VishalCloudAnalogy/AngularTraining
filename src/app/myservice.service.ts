@@ -18,7 +18,7 @@ export class MyserviceService {
   this.holdData = data;
   // this.router.navigate(['services']);
   console.log("Data Received " + this.holdData);
-   console.log("New Changes"); 
+//    console.log("New Changes"); 
 }
 
 
