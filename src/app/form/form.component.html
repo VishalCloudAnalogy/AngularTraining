@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+    <div class="form-group">
+      <input type="text" class="form-control" formControlName="userName" placeholder="Enter name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" formControlName="userEmail" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password" formControlName="userPassword"
+        autocomplete="off" required>
+    </div>
+    <div class="text-left">
+      <button type="submit" class="btn btn-primary transition-3d-hover mr-2">Signup</button>
+      <a routerLink="/profile" class="btn btn-danger transition-3d-hover"> Profile </a>
+    </div>
+    <!-- End Button -->
+  </form>  
+
+</div>
