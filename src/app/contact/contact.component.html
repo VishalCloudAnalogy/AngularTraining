@@ -1,0 +1,26 @@
+
+<div class="container page-wrapper">
+
+    <form>
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="name">Username:</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+    
+      
+      <button type="submit" class="btn btn-primary" [disabled]="!allowNewemail">Submit</button>
+     
+    </form>
+
+    <br/>
+    <!-- <p>
+        Name: {{ name.value }}
+    </p>
+    <p>
+        Email: {{ email.value }}
+    </p> -->
+</div>

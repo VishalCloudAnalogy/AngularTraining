@@ -1,0 +1,9 @@
+.msg-success {
+    color: green;
+}
+.msg-bgcolor {
+    background-color: yellow;
+}
+.msg-failed {
+    color: red;
+}

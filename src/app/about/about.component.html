@@ -1,0 +1,55 @@
+<div class="container page-wrapper">
+  <h1 class="text-center">Hi! This is {{message}} to about Component</h1>
+  <p class="text-center" [ngClass]="messageClasses">I am learning Angular and I am using Class binding here.</p>
+  <hr/>
+  
+    <div>
+        <h2 class="text-center" [style.color] = "hasError ? 'red' : 'green'">Style binding</h2>
+    </div>
+    <div>
+      <h2 class="text-center" [ngStyle] = "isSpecial">Style binding with multiple properties using object</h2>
+    </div>
+  
+    <input [(ngModel)] = "myName" #userName type="text" placeholder="Enter your Name">
+    <input #userEmail type="email" placeholder="Enter your Email">
+    <button (click)="formVal([userName.value, userEmail.value])">Click to see the values on Cosonle</button>
+    <!-- {{ myName }} -->
+    <hr/>
+    <h2 class="text-center">Structural Module</h2>
+    <!-- <input id="myname" name="myName" class="form-control" required minlength="4" appForbiddenName="bob" [(ngModel)]="about.name" #name="ngModel" >
+
+      <div *ngIf="myName.invalid && (myName.dirty || myName.touched)" class="alert alert-danger">
+        <div *ngIf="myName.errors.required">
+          Name is required.
+        </div>
+        <div *ngIf="myName.errors.minlength">
+          Name must be at least 4 characters long.
+        </div>
+        <div *ngIf="myName.errors.forbiddenName">
+          Name cannot be Bob.
+        </div>
+
+      </div> -->
+    <!-- {{ yourName }} -->
+    <!-- <ng-template #elseBlock>
+      <p [ngClass]="messageClasses">Please Enter your name in the input box.</p>
+    </ng-template> -->
+        
+    <input #color [(ngModel)]="enteredColor" name="colorname">
+    <button (click)="colorValue(color.value)">Click to see the entered color</button>
+    {{ color.value }}
+    
+    <div ngSwitch="color">
+      <div *ngSwitchCase="'red'">You picked {{enteredColor}} color</div>
+      <div *ngSwitchCase="'green'">You picked {{enteredColor}} color</div>
+      <div *ngSwitchCase="'blue'">You picked {{enteredColor}} color</div>
+    </div>
+
+    <div *ngFor="let subject of subjects; index as i">
+      <ul><li>{{i}} {{subject}}</li></ul>
+    </div>
+
+
+     
+     
+</div>

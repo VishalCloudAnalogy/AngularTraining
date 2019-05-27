@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-project';
+  // data: any;
+  // useremail: string;
+  // username: string;
+  // userpass: string;
+
+  // receiveData($event) {
+  //   this.data = $event;
+  //   console.log("Name " + this.username + " Email " + this.useremail + " Pass " + this.userpass);
+  // }
 }
+
