@@ -20,6 +20,7 @@ export class BlogPostComponent implements OnInit {
 
   ngOnInit() {
     this.formDataHolder = this.myService.holdFormData();
+    console.log("Inthe blog-post ts ", this.formDataHolder);
     this.userName = this.formDataHolder.userName;          
   }
 

@@ -3,7 +3,8 @@
   <p> Hi! <a routerLink="/profile" > {{userName}} </a>, Post your thounght here. It will delete when you reload the page. </p>
   <form [formGroup]="postBlog" (ngSubmit)="newBlog()">
     <div class="form-group">
-      <input type="text" class="form-control" formControlName="blogTitle" placeholder="Enter Title" required>
+      <input type="text" class="form-control" formControlName="blogTitle" placeholder="Hi! {{userName}}, Enter your bog title"
+        required>
     </div>
     <div class="form-group">
       <textarea class="form-control" formControlName="blogDesc" placeholder="Blog Desc"></textarea>      

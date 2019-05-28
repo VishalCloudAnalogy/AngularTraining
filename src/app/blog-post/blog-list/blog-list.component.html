@@ -1,3 +1,14 @@
-<p>
-  blog-list works!
-</p>
+<div class="container">
+  <div class="card mt-4">
+    <div class="card-header">
+      {{ newBlogData.blogTitle }}
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p> {{ newBlogData.blogDesc }} </p>
+        <footer class="blockquote-footer"> {{formDataHolder.userName}} <cite title="Source Title"> Hihihihi </cite>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>

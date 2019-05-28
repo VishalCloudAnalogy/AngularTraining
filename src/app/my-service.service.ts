@@ -24,9 +24,9 @@ export class MyServiceService {
   }
 
   // For new blog 
-
   public newBlogData(blog: any) {
     this.holdBlogValue = blog;
+    this.router.navigate(['blogs']);
     console.log("in the service file ",this.holdBlogValue);
   }
 

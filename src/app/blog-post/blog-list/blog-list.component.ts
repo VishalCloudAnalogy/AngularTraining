@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MyServiceService } from '../../my-service.service';
+import { MyServiceService } from 'src/app/my-service.service';
 
 @Component({
   selector: 'app-blog-list',
@@ -7,17 +7,15 @@ import { MyServiceService } from '../../my-service.service';
   styleUrls: ['./blog-list.component.css']
 })
 export class BlogListComponent implements OnInit {
-  newBlogHolder: any;
-  bTitle: string;
-  blogDesc: string;  
+  newBlogData: any;
+  formDataHolder: any;
 
-  constructor(private myService: MyServiceService) { }
+  constructor(private myService: MyServiceService) { } 
 
   ngOnInit() {
-    this.newBlogHolder = this.myService.holdNewBlog();
-    this.bTitle = this.newBlogHolder.blogTitle;
-    this.blogDesc = this.newBlogHolder.blogDesc;
-    console.log(this.bTitle);
-    console.log(this.blogDesc);
+    this.newBlogData = this.myService.holdNewBlog();
+    
+    this.formDataHolder = this.myService.holdFormData();
   }
+
 }

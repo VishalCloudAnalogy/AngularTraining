@@ -8,6 +8,7 @@ import { FormComponent } from './form/form.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogListComponent } from './blog-post/blog-list/blog-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BlogListComponent } from './blog-post/blog-list/blog-list.component';
     FormComponent,
     ProfileComponent,
     BlogPostComponent,
-    BlogListComponent
+    BlogListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
