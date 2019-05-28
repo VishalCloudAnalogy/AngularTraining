@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MyserviceService } from '../myservice.service';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -40,7 +41,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   
-  onLogin() {
+  public onLogin() {
     this.userData.loginData(this.profileForm.value);
   }
 }

@@ -1,7 +1,23 @@
 <div class="container page-wrapper">
-    <p>
-        services works!
-    </p>
-    
+    <h3>Welcome {{edata.name}}, you are good to go.</h3>
+    <br/>
+    <div class="card card-main">
+        <form [formGroup]="serviceForm" (ngSubmit)="onSubmit()">
+            <label for="stitle">Service Title:</label>
+            <input type="text" class="form-control" id="stitle" placeholder="Enter Title" formControlName="stitle">
+            <label for="sdescription">Description:</label>
+            <textarea class="form-control" rows="5" id="sdescription" placeholder="Enter Description" formControlName="sdescription"></textarea>
+            <br/>
+          <button type="submit" class="btn btn-primary">Post Service</button>
+        </form>
+    </div>
+    <br/>
+    <div>
+        <h2 class="text-center">Our Services </h2>
+        <!-- {{servicelist |json}}  -->
+  <app-servicedetail></app-servicedetail>
+    </div>
+
+
 </div>
 

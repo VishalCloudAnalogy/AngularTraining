@@ -16,6 +16,7 @@ import { MyserviceService } from './myservice.service';
 import { ServicesComponent } from './services/services.component';
 import { NgSwitchCase, NgSwitch } from '@angular/common';
 import { LoginComponent } from './login/login.component';
+import { ServicedetailComponent } from './servicedetail/servicedetail.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     FooterComponent,
     ServicesComponent,
-    LoginComponent
+    LoginComponent,
+    ServicedetailComponent
   ],
   imports: [
     BrowserModule,

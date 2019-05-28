@@ -1,5 +1,7 @@
 <div class="container page-wrapper">
   <div class="card card-main">
+      <h2 class="text-center">Fill the details to login:</h2>
+      <br>
       <form [formGroup]="profileForm" (ngSubmit)="onLogin()">
           <label for="name">Name:</label>
           <input type="text" class="form-control" id="name" placeholder="Enter name" formControlName="name">

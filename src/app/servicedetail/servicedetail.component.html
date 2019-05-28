@@ -1,0 +1,30 @@
+<p>
+  servicedetail works!
+  {{servarr}}
+
+  Service is there
+
+  {{servarr[0]}}
+
+  Service is there
+
+  {{servarr|json}}
+
+
+</p>
+<div class="col-md-4" *ngFor="let value of servarr">
+
+    <div class="col-md-4 service-cards">
+      <div class="card">
+        
+          <div class="card-header">
+              {{value.stitle}}
+          </div>
+          <div class="card-body">
+          <blockquote class="blockquote mb-0">
+          <p> {{value.sdescription}}</p>
+          </blockquote>
+          </div>
+          </div>
+    </div>
+</div>
