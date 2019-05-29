@@ -1,0 +1,18 @@
+.navbar .nav-item .nav-link {
+    text-transform: uppercase;
+    padding: 15px;
+}
+#header {
+    background: #333;
+    width: 100%;
+    padding: 15px;
+}
+#header .main-nav ul li {
+    display: inline;
+    padding: 10px;
+}
+nav.main-nav.float-right.d-none.d-lg-block {
+    margin-top: 15px;
+}
+
+
