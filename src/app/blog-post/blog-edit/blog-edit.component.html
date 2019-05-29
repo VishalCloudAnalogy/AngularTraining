@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <h1> Post a blog here </h1>
+  <p> Hi! <a routerLink="/profile"> </a>, Post your thounght here. It will delete when you reload the page.
+  </p>
+  <form [formGroup]="editBlog" (ngSubmit)="updateBlog()">
+    <div class="form-group">
+      <input type="text" class="form-control" formControlName="blogTitle"
+        placeholder="Edit the blog Title" required [(ngModel)]="newBlogData.blogTitle" >
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" formControlName="blogDesc" placeholder="Edit the Blog Desc"
+        [(ngModel)]="formDataHolder.userName"></textarea>
+    </div>
+    <div class="text-left">
+      <button type="submit" class="btn btn-primary transition-3d-hover mr-2">Post</button>
+    </div>
+    <!-- End Button -->
+  </form>
+</div>

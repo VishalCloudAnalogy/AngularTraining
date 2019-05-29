@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogListComponent } from './blog-post/blog-list/blog-list.component';
 import { HeaderComponent } from './header/header.component';
+import { BlogEditComponent } from './blog-post/blog-edit/blog-edit.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeaderComponent } from './header/header.component';
     ProfileComponent,
     BlogPostComponent,
     BlogListComponent,
-    HeaderComponent
+    HeaderComponent,
+    BlogEditComponent
   ],
   imports: [
     BrowserModule,
