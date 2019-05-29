@@ -19,6 +19,3 @@ export class ContactComponent implements OnInit {
     this.email.setValue('amit.kumar@cloudanalogy.com');
   }
 }
-
-
-
