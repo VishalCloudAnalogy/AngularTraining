@@ -10,6 +10,7 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogListComponent } from './blog-post/blog-list/blog-list.component';
 import { HeaderComponent } from './header/header.component';
 import { BlogEditComponent } from './blog-post/blog-edit/blog-edit.component';
+import { BlogDeleteComponent } from './blog-post/blog-delete/blog-delete.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BlogEditComponent } from './blog-post/blog-edit/blog-edit.component';
     BlogPostComponent,
     BlogListComponent,
     HeaderComponent,
-    BlogEditComponent
+    BlogEditComponent,
+    BlogDeleteComponent
   ],
   imports: [
     BrowserModule,
