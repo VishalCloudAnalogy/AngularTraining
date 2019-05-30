@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-about',
@@ -9,12 +8,7 @@ import { FormControl } from '@angular/forms';
 export class AboutComponent implements OnInit {
 
   constructor() { }
-  name = new FormControl('');
-  email = new FormControl('');
+
   ngOnInit() {
-  }
-  updateName() {
-    this.name.setValue('Amit');
-    this.email.setValue('amit.kumar@cloudanalogy.com');
   }
 }
