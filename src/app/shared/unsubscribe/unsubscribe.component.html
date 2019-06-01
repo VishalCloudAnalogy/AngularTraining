@@ -1,0 +1,18 @@
+<div nz-row nzType="flex" nzJustify="space-around" nzAlign="middle" class="h-100vh">
+  <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12" class="aside f-h-w">    
+      <img src="../../../assets/main_bg.png" alt="">    
+  </div>
+  <div nz-col nzXs="24" nzSm="24" nzMd="12" nzLg="12" nzXl="12" class="bside f-h-w">
+    <h1> This doesn't have to be Goodbye </h1>
+    <p> Need to cut back just a little? Choose how often we contact you. </p>
+
+    <nz-radio-group [(ngModel)]="radioValue">
+      <label nz-radio [ngStyle]="style" nzValue="A"> <b>Just fewer emails, please</b> </label>
+      <span> I still want to know about big trends, new arrivals, and great deals, though! </span>
+      <label nz-radio [ngStyle]="style" nzValue="B"> <b> Every now and then. </b> </label>
+      <span> I still want to know about big trends, new arrivals, and great deals, though! </span>
+      <label nz-radio [ngStyle]="style" nzValue="C"> <b> Oops, changed my mind. </b> </label>
+      <span> I still want to know about big trends, new arrivals, and great deals, though! </span>
+    </nz-radio-group>
+  </div>
+</div>
