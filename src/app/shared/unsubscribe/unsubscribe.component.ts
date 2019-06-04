@@ -10,6 +10,7 @@ export class UnsubscribeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("hjhdsjkfhsdkjfhkjsdfh");
     
   }
 
