@@ -7,10 +7,12 @@
 
 .aside img {
   height: 100%;
+  width: auto;
 }
 
 [nz-radio] {
   display: block;
+  margin-bottom: 2px;
 }
 
 .f-h-w {
@@ -20,4 +22,14 @@
 }
 .h-100vh {
     height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .aside img {
+    width: 100%;
+    height: auto;
+  }
+  .h-100vh {
+    height: auto;
+  }
 }
